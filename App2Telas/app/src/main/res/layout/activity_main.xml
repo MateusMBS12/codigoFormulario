@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="65dp"
+        android:text="Formulário"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/campoNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/campoNome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="Nome:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/campoCPF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:text="Nome:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/campoNome"
+        app:layout_constraintStart_toStartOf="@+id/campoNome" />
+
+    <TextView
+        android:id="@+id/textocpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/campoCPF"
+        app:layout_constraintStart_toStartOf="@+id/campoCPF" />
+
+    <TextView
+        android:id="@+id/textoemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/campoEmail"
+        app:layout_constraintStart_toStartOf="@+id/campoEmail" />
+
+    <TextView
+        android:id="@+id/textosenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Senha:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/campoSenha"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/campoCPF"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="66dp"
+        android:ems="10"
+        android:hint="CPF:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/campoEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNome" />
+
+    <EditText
+        android:id="@+id/campoEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/campoSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoCPF" />
+
+    <EditText
+        android:id="@+id/campoSenha"
+        android:layout_width="324dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:ems="10"
+        android:hint="Senha:"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/botInicial"
+        app:layout_constraintStart_toStartOf="@+id/textosenha"
+        app:layout_constraintTop_toBottomOf="@+id/campoEmail" />
+
+    <Button
+        android:id="@+id/botInicial"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="Botao"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoSenha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
